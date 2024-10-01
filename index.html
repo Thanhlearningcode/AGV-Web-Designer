@@ -9,19 +9,10 @@
             font-family: Arial, sans-serif;
             text-align: center; /* Căn giữa nội dung */
             margin: 0;
-            padding: 0;
+            padding: 20px; /* Thêm khoảng cách cho toàn bộ nội dung */
         }
         h1, h2, h3 {
             color: #2c3e50;
-        }
-        .logo-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .logo-container img {
-            height: 100px; /* Đặt chiều cao cho logo */
-            margin: 0 15px; /* Khoảng cách giữa các logo */
         }
         .main-title {
             margin-top: 20px;
@@ -39,6 +30,12 @@
         .date {
             margin-top: 40px;
             font-weight: bold;
+        }
+        #project-summary {
+            text-align: left; /* Căn trái cho nội dung tóm tắt dự án */
+            margin: 20px auto; /* Thêm khoảng cách cho nội dung tóm tắt và căn giữa */
+            font-size: 14px; /* Kích thước chữ */
+            max-width: 800px; /* Giới hạn chiều rộng của nội dung */
         }
     </style>
 </head>
@@ -60,11 +57,7 @@
 
     <div class="date">Da Nang, June 2024</div>
 
-    <div class="logo-container">
-        <img src="https://raw.githubusercontent.com/Thanhlearningcode/agv.github.io/main/image002.jpg" alt="Logo Bach Khoa Da Nang">
-        <img src="https://raw.githubusercontent.com/Thanhlearningcode/agv.github.io/main/images.png" alt="Mechanical Engineering Logo">
-    </div>
-<h2>Project Summary</h2>
+    <h2>Project Summary</h2>
     <div id="project-summary">
         <p>
             Autonomous robots have become a familiar presence in our daily lives, 
