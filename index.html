@@ -7,20 +7,11 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center; /* Căn giữa nội dung */
+            text-align: left; /* Căn trái toàn bộ nội dung */
             margin: 20px; /* Khoảng cách xung quanh */
         }
         h1, h2, h3 {
             color: #2c3e50;
-        }
-        .logo-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .logo-container img {
-            height: 100px; /* Đặt chiều cao cho logo */
-            margin: 0 15px; /* Khoảng cách giữa các logo */
         }
         .main-title {
             margin-top: 20px;
@@ -39,16 +30,10 @@
             margin-top: 40px;
             font-weight: bold;
         }
-        #project-summary {
-            text-align: left; /* Căn trái cho nội dung tóm tắt dự án */
-            margin: 20px auto; /* Thêm khoảng cách cho nội dung tóm tắt và căn giữa */
-            font-size: 14px; /* Kích thước chữ */
+        #project-summary, #table-of-contents {
             max-width: 800px; /* Giới hạn chiều rộng của nội dung */
-        }
-        #table-of-contents {
-            text-align: left; /* Căn trái cho mục lục */
             margin: 20px auto; /* Căn giữa */
-            max-width: 800px; /* Giới hạn chiều rộng của mục lục */
+            font-size: 14px; /* Kích thước chữ */
         }
         ul {
             list-style-type: none; /* Loại bỏ dấu chấm đầu dòng */
@@ -56,18 +41,12 @@
         }
         li {
             margin: 10px 0; /* Khoảng cách giữa các mục */
-            font-size: 16px; /* Kích thước chữ cho từng mục */
-        }
-        .section {
-            margin: 20px 0; /* Khoảng cách giữa các phần */
-            text-align: left; /* Căn trái nội dung */
-            max-width: 800px; /* Giới hạn chiều rộng của phần nội dung */
-            margin-left: auto; /* Căn giữa */
-            margin-right: auto; /* Căn giữa */
         }
         img {
             max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng */
             height: auto; /* Tự động điều chỉnh chiều cao */
+            display: block; /* Để căn giữa hình ảnh */
+            margin: 10px auto; /* Thêm khoảng cách cho hình ảnh */
         }
     </style>
 </head>
@@ -205,7 +184,6 @@
     <p>Robot Operating System (ROS) is an open-source operating system for robots, widely used in the field of robotics with numerous advantages. ROS is a set of tools, libraries, and conventions aimed at simplifying the task of creating complex and powerful robot behaviors across various robotic platforms without requiring significant changes to the software program.</p>
     
     <img src="https://github.com/Thanhlearningcode/agv.github.io/blob/main/3.jpg" alt="Overview of Robot Operating System" />
-
     <h4>Figure 2.1 Overview of Robot Operating System</h4>
 
 </body>
