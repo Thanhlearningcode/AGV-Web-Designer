@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to AGV's site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+    </style>
 </head>
 <body>
     <h1>Xin chào, tôi là AGV!</h1>
     <p>Đây là trang web đầu tiên của tôi được tạo trên GitHub Pages!</p>
+
+    <h2>Giới thiệu Dự án</h2>
+    <p id="project-summary"></p> <!-- Phần tử để hiển thị tóm tắt dự án -->
+
+    <script>
+        // Nội dung tóm tắt dự án
+        const projectSummary = `
+            Autonomous robots have become a familiar presence in our daily lives, 
+            appearing everywhere from rural areas to urban environments, in factories 
+            and households. These robots play a significant role in both industrial 
+            production and everyday activities, greatly assisting in replacing humans 
+            for difficult and labor-intensive tasks, thereby saving time, resources, 
+            and human effort.
+
+            Inspired by their wide-ranging applications and practical benefits, this 
+            project focuses on developing an autonomous robot capable of performing 
+            tasks fully autonomously or semi-autonomously. Key components of the project 
+            include designing robust hardware, developing mapping and localization capabilities, 
+            implementing path-planning algorithms, and integrating applications for efficient 
+            navigation in dynamic settings.
+
+            The results of this project are promising. The robot successfully maps unknown 
+            environments with minimal deviation and demonstrates reliable self-localization 
+            capabilities, effectively navigating to its targets with minimal errors.
+        `;
+
+        // Hiển thị nội dung tóm tắt dự án
+        document.getElementById("project-summary").innerText = projectSummary;
+    </script>
 </body>
 </html>
