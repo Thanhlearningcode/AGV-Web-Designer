@@ -3,48 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to AGV's site</title>
+    <title>PBL 4: Development of a Path-Following AGV Mobile Robot</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            line-height: 1.6;
         }
-        h2 {
+        h1, h2, h3 {
             color: #2c3e50;
+        }
+        .title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .instructor, .student, .class, .date {
+            margin: 10px 0;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Xin chào, tôi là AGV!</h1>
-    <p>Đây là trang web đầu tiên của tôi được tạo trên GitHub Pages!</p>
 
-    <h2>Giới thiệu Dự án</h2>
-    <p id="project-summary"></p> <!-- Phần tử để hiển thị tóm tắt dự án -->
+    <div class="title">
+        <h1>THE UNIVERSITY OF DANANG</h1>
+        <h2>UNIVERSITY OF SCIENCE AND TECHNOLOGY</h2>
+        <h3>Faculty of Mechanical Engineering</h3>
+    </div>
 
-    <script>
-        // Nội dung tóm tắt dự án
-        const projectSummary = `
-            Autonomous robots have become a familiar presence in our daily lives, 
-            appearing everywhere from rural areas to urban environments, in factories 
-            and households. These robots play a significant role in both industrial 
-            production and everyday activities, greatly assisting in replacing humans 
-            for difficult and labor-intensive tasks, thereby saving time, resources, 
-            and human effort.
+    <h2>PBL 4: Design of a Mechatronic System</h2>
+    <h3>Development of a Path-Following AGV Mobile Robot</h3>
 
-            Inspired by their wide-ranging applications and practical benefits, this 
-            project focuses on developing an autonomous robot capable of performing 
-            tasks fully autonomously or semi-autonomously. Key components of the project 
-            include designing robust hardware, developing mapping and localization capabilities, 
-            implementing path-planning algorithms, and integrating applications for efficient 
-            navigation in dynamic settings.
+    <div class="instructor">
+        <p><strong>Instructor:</strong> DR. PHAM ANH DUC</p>
+    </div>
+    <div class="student">
+        <p><strong>Student:</strong> NGUYEN VAN THANH</p>
+        <p><strong>Student:</strong> PHAN DANG DANH</p>
+    </div>
+    <div class="class">
+        <p><strong>Class:</strong> 21CDTCLC1 (21.Nh05)</p>
+    </div>
+    <div class="date">
+        <p><strong>Da Nang, June 2024</strong></p>
+    </div>
 
-            The results of this project are promising. The robot successfully maps unknown 
-            environments with minimal deviation and demonstrates reliable self-localization 
-            capabilities, effectively navigating to its targets with minimal errors.
-        `;
-
-        // Hiển thị nội dung tóm tắt dự án
-        document.getElementById("project-summary").innerText = projectSummary;
-    </script>
 </body>
 </html>
