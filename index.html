@@ -7,11 +7,20 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: left; /* Căn trái toàn bộ nội dung */
+            text-align: center; /* Căn giữa nội dung */
             margin: 20px; /* Khoảng cách xung quanh */
         }
         h1, h2, h3 {
             color: #2c3e50;
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .logo-container img {
+            height: 100px; /* Đặt chiều cao cho logo */
+            margin: 0 15px; /* Khoảng cách giữa các logo */
         }
         .main-title {
             margin-top: 20px;
@@ -30,10 +39,16 @@
             margin-top: 40px;
             font-weight: bold;
         }
-        #project-summary, #table-of-contents {
-            max-width: 800px; /* Giới hạn chiều rộng của nội dung */
-            margin: 20px auto; /* Căn giữa */
+        #project-summary {
+            text-align: left; /* Căn trái cho nội dung tóm tắt dự án */
+            margin: 20px auto; /* Thêm khoảng cách cho nội dung tóm tắt và căn giữa */
             font-size: 14px; /* Kích thước chữ */
+            max-width: 800px; /* Giới hạn chiều rộng của nội dung */
+        }
+        #table-of-contents {
+            text-align: left; /* Căn trái cho mục lục */
+            margin: 20px auto; /* Căn giữa */
+            max-width: 800px; /* Giới hạn chiều rộng của mục lục */
         }
         ul {
             list-style-type: none; /* Loại bỏ dấu chấm đầu dòng */
@@ -41,12 +56,7 @@
         }
         li {
             margin: 10px 0; /* Khoảng cách giữa các mục */
-        }
-        img {
-            max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng */
-            height: auto; /* Tự động điều chỉnh chiều cao */
-            display: block; /* Để căn giữa hình ảnh */
-            margin: 10px auto; /* Thêm khoảng cách cho hình ảnh */
+            font-size: 16px; /* Kích thước chữ cho từng mục */
         }
     </style>
 </head>
@@ -169,22 +179,6 @@
             these outcomes.
         </p>
     </div>
-
-    <h2>Chapter 2: Theoretical Foundations</h2>
-    <p>This chapter will provide the theoretical basis for the development of the autonomous robot system using Lidar technology. It will cover key concepts, algorithms, and technologies relevant to the project, including:</p>
-
-    <h3>2. Overview of the Robot Operating System (ROS)</h3>
-    <ul>
-        <li>Introduction to ROS</li>
-        <li>ROS Architecture</li>
-        <li>ROS Noetic Version</li>
-    </ul>
-
-    <h3>2.1 Introduction to ROS (Robot Operating System)</h3>
-    <p>Robot Operating System (ROS) is an open-source operating system for robots, widely used in the field of robotics with numerous advantages. ROS is a set of tools, libraries, and conventions aimed at simplifying the task of creating complex and powerful robot behaviors across various robotic platforms without requiring significant changes to the software program.</p>
-    
-    <img src="https://github.com/Thanhlearningcode/agv.github.io/blob/main/3.jpg" alt="Overview of Robot Operating System" />
-    <h4>Figure 2.1 Overview of Robot Operating System</h4>
 
 </body>
 </html>
