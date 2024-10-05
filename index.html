@@ -3,25 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Login</title>
+    <title>PBL 4: Development of a Path-Following AGV Mobile Robot</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center; /* Căn giữa nội dung */
             margin: 20px; /* Khoảng cách xung quanh */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: #f0f0f0;
-        }
-        .login-container, .project-container {
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
-            max-width: 800px; /* Giới hạn chiều rộng */
-            width: 100%;
         }
         h1, h2, h3 {
             color: #2c3e50;
@@ -70,6 +57,15 @@
         li {
             margin: 10px 0; /* Khoảng cách giữa các mục */
             font-size: 16px; /* Kích thước chữ cho từng mục */
+        }
+        .login-container {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            max-width: 400px; /* Giới hạn chiều rộng cho form đăng nhập */
+            width: 100%;
+            margin: 0 auto; /* Căn giữa form đăng nhập */
         }
         .error {
             color: red;
@@ -189,9 +185,9 @@
 
         <h2 style="font-size: 20px; font-weight: bold;">2. Overview of the Robot Operating System (ROS)</h2>
         <ul style="font-size: 16px;">
-            <li>Introduction to ROS</li>
-            <li>ROS Architecture</li>
-            <li>ROS Noetic Version</li>
+            <li>2.1. Introduction to ROS</li>
+            <li>2.1.1. Structure of ROS</li>
+            <li>2.1.2. ROS Noetic Version</li>
         </ul>
 
         <h3 style="font-size: 18px; font-weight: bold;">2.1 Introduction to ROS (Robot Operating System)</h3>
@@ -214,7 +210,7 @@
             When applied to robotics, ROS reduces the technical workload for basic tasks, allowing more focus on system building and specialized research. This shift enables researchers and developers to dedicate their efforts to advanced applications and projects with higher scientific value.
         </p>
     </div>
-    
+
     <script>
         // JavaScript kiểm tra đăng nhập
         document.getElementById('loginForm').addEventListener('submit', function(e) {
@@ -226,7 +222,7 @@
 
             // Kiểm tra tên tài khoản và mật khẩu
             if (username === 'thanh' && password === '1') {
-                // Nếu đúng, hiển thị nội dung của dự án
+                // Nếu đúng, ẩn form đăng nhập và hiển thị nội dung của dự án
                 document.getElementById('login-container').style.display = 'none';
                 document.getElementById('project-container').style.display = 'block';
             } else {
