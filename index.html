@@ -9,6 +9,7 @@
             font-family: Arial, sans-serif;
             text-align: center; /* Căn giữa nội dung */
             margin: 20px; /* Khoảng cách xung quanh */
+            background: #f0f0f0; /* Màu nền cho toàn bộ trang */
         }
         h1, h2, h3 {
             color: #2c3e50;
@@ -39,16 +40,12 @@
             margin-top: 40px;
             font-weight: bold;
         }
-        #project-summary {
-            text-align: left; /* Căn trái cho nội dung tóm tắt dự án */
+        /* Cấu hình cho phần tóm tắt và bảng mục lục */
+        #project-summary, #table-of-contents {
+            text-align: left; /* Căn trái cho nội dung */
             margin: 20px auto; /* Thêm khoảng cách cho nội dung tóm tắt và căn giữa */
             font-size: 14px; /* Kích thước chữ */
             max-width: 800px; /* Giới hạn chiều rộng của nội dung */
-        }
-        #table-of-contents {
-            text-align: left; /* Căn trái cho mục lục */
-            margin: 20px auto; /* Căn giữa */
-            max-width: 800px; /* Giới hạn chiều rộng của mục lục */
         }
         ul {
             list-style-type: none; /* Loại bỏ dấu chấm đầu dòng */
@@ -58,18 +55,54 @@
             margin: 10px 0; /* Khoảng cách giữa các mục */
             font-size: 16px; /* Kích thước chữ cho từng mục */
         }
+        /* Giao diện cho phần đăng nhập */
         .login-container {
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background: #ffffff; /* Nền trắng cho phần đăng nhập */
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             max-width: 400px; /* Giới hạn chiều rộng cho form đăng nhập */
             width: 100%;
-            margin: 0 auto; /* Căn giữa form đăng nhập */
+            margin: 50px auto; /* Căn giữa form đăng nhập */
+            border: 1px solid #ddd; /* Viền nhẹ cho form */
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        .login-container label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #333;
+            text-align: left; /* Căn trái cho nhãn */
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            background: #2c3e50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s; /* Hiệu ứng chuyển màu nền */
+        }
+        .login-container button:hover {
+            background: #34495e; /* Đổi màu nền khi hover */
         }
         .error {
             color: red;
             text-align: center;
+            margin-top: 10px;
         }
     </style>
 </head>
