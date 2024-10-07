@@ -104,7 +104,15 @@
             text-align: center;
             margin-top: 10px;
         }
+        /* Style cho VNC viewer */
+        #vnc-container {
+            width: 800px;
+            height: 600px;
+            border: 1px solid #ccc;
+            margin: 20px auto;
+        }
     </style>
+    <script src="https://cdn.rawgit.com/novnc/noVNC/master/core/rfb.js"></script>
 </head>
 <body>
 
@@ -244,6 +252,25 @@
         </p>
     </div>
 
+    <div id="vnc-container">
+        <h2 style="font-size: 22px; font-weight: bold;">VNC Viewer</h2>
+        <canvas id="noVNC_canvas" style="width: 800px; height: 600px; border: 1px solid #ccc;"></canvas>
+    </div>
+
+    <script src="https://cdn.rawgit.com/novnc/noVNC/master/core/rfb.js"></script>
+    <script>
+        const rfb = new RFB(document.getElementById('noVNC_canvas'), 'ws://YOUR_VNC_SERVER:PORT'); // Thay YOUR_VNC_SERVER và PORT cho đúng
+        rfb.viewOnly = false;
+
+        rfb.addEventListener('connect', function () {
+            console.log('Đã kết nối với máy chủ VNC');
+        });
+
+        rfb.addEventListener('disconnect', function () {
+            console.log('Đã ngắt kết nối với máy chủ VNC');
+        });
+    </script>
+
     <script>
         // JavaScript kiểm tra đăng nhập
         document.getElementById('loginForm').addEventListener('submit', function(e) {
@@ -258,6 +285,7 @@
                 // Nếu đúng, ẩn form đăng nhập và hiển thị nội dung của dự án
                 document.getElementById('login-container').style.display = 'none';
                 document.getElementById('project-container').style.display = 'block';
+                document.getElementById('vnc-container').style.display = 'block'; // Hiển thị VNC Viewer
             } else {
                 // Nếu sai, hiển thị thông báo lỗi
                 document.getElementById('error-message').textContent = 'Tên đăng nhập hoặc mật khẩu không đúng!';
