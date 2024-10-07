@@ -106,6 +106,7 @@
         }
         /* Style cho VNC viewer */
         #vnc-container {
+            display: none; /* Ẩn khi chưa đăng nhập */
             width: 800px;
             height: 600px;
             border: 1px solid #ccc;
@@ -262,12 +263,21 @@
         const rfb = new RFB(document.getElementById('noVNC_canvas'), 'ws://YOUR_VNC_SERVER:PORT'); // Thay YOUR_VNC_SERVER và PORT cho đúng
         rfb.viewOnly = false;
 
+        // Sự kiện khi kết nối thành công
         rfb.addEventListener('connect', function () {
             console.log('Đã kết nối với máy chủ VNC');
+            document.getElementById('vnc-container').style.borderColor = 'green'; // Đổi màu viền thành màu xanh
         });
 
+        // Sự kiện khi ngắt kết nối
         rfb.addEventListener('disconnect', function () {
             console.log('Đã ngắt kết nối với máy chủ VNC');
+            document.getElementById('vnc-container').style.borderColor = 'red'; // Đổi màu viền thành màu đỏ
+        });
+
+        // Sự kiện khi cần thông tin xác thực
+        rfb.addEventListener('credentialsrequired', function () {
+            console.log('Cần thông tin xác thực để kết nối');
         });
     </script>
 
