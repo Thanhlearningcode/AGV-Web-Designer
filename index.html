@@ -296,6 +296,7 @@
                 document.getElementById('login-container').style.display = 'none';
                 document.getElementById('project-container').style.display = 'block';
                 document.getElementById('vnc-container').style.display = 'block'; // Hiển thị VNC Viewer
+                rfb.connect('192.168.2.132', 5900, password); // Kết nối với máy chủ VNC
             } else {
                 // Nếu sai, hiển thị thông báo lỗi
                 document.getElementById('error-message').textContent = 'Tên đăng nhập hoặc mật khẩu không đúng!';
