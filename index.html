@@ -260,7 +260,7 @@
 
     <script src="https://cdn.rawgit.com/novnc/noVNC/master/core/rfb.js"></script>
     <script>
-        const rfb = new RFB(document.getElementById('noVNC_canvas'), 'ws://YOUR_VNC_SERVER:PORT'); // Thay YOUR_VNC_SERVER và PORT cho đúng
+        const rfb = new RFB(document.getElementById('noVNC_canvas'), 'ws://192.168.2.132:5900'); // Thay 5900 với cổng WebSocket nếu cần
         rfb.viewOnly = false;
 
         // Sự kiện khi kết nối thành công
